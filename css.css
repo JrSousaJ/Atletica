@@ -1,87 +1,185 @@
-body{
-	background-image: url("iutsa.jpg");
-	background-position: center; /* Center the image */
-  	background-repeat: no-repeat; /* Do not repeat the image */
- 	background-size: cover;
- 	color:white;
- 	text-align: center;
-}
-h1{
-	color:white !important;
-	font-weight: bold;
-	font-size: 50px !important;
-	background-color:rgb(0, 1, 1);
-	padding: 0;
-	margin:0;
-	border: 0;
+body {
+    background-image: url("iutsa.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    color: white;
+    text-align: center;
 }
 
-.descricao{
-	font-size: 16px;
-	margin-top: 10px;
-	margin-left: 10px;
+h1 {
+    color: white !important;
+    font-weight: bold;
+    font-size: 50px !important;
+    background-color: rgb(0, 1, 1);
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.descricao {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
 
 }
-.map{
-	-webkit-box-shadow:0px 0px 6px 1px #87f91a ;
-	-moz-box-shadow:0px 0px 6px 1px #87f91a ;
-	box-shadow:0px 0px 6px 1px #87f91a ;
-	border: 1px;
-	align-items: center;
-	padding: 20px;
-	margin: 20px;
-	background:none repeat 0 0 rgb(141, 219, 132);
+
+.map {
+    -webkit-box-shadow: 0px 0px 6px 1px #87f91a;
+    -moz-box-shadow: 0px 0px 6px 1px #87f91a;
+    box-shadow: 0px 0px 6px 1px #87f91a;
+    border: 1px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background: none repeat 0 0 rgb(141, 219, 132);
 
 }
-.mapa{
-	margin:0px auto; 
-	display:inline-block;
+
+.mapa {
+    margin: 0px auto;
+    display: inline-block;
 }
-.descricao-mapa{
-	text-decoration: none;
-	align-items: center;
-	font-size: 20px;
-	float:right;
-	text-align: left;
-	display: grid;
+
+.descricao-mapa {
+    text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+    float: right;
+    text-align: left;
+    display: grid;
 }
-.evento{
-	 display:inline-block; 
-	 width: auto;
+
+.evento {
+    display: inline-block;
+    width: auto;
 }
-.eventos{
-	background:none repeat 0 0 rgb(142, 249, 129);
-	color:black;
-	font-size: 22px;
-	font-weight: bold;
-	border: 1px black solid;  align-items: center; padding: 20px; margin: 20px; float: left
+
+.eventos {
+    background: none repeat 0 0 rgb(142, 249, 129);
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px black solid;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    float: left
 }
-.eventos:hover{
-	background:none repeat 0 0 rgb(96, 201, 84);
+
+.eventos:hover {
+    background: none repeat 0 0 rgb(96, 201, 84);
 
 }
-button{
-	font-size: 22px;
-	background-color:rgb(75, 151, 65);
-	text-decoration: none;
-	border: none;
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left: 12px;
-	padding-right: 12px;
-	color: white;
-}	
-button:hover{
-	font-size: 22px;
-	background:none repeat 0 0 rgb(255, 255, 255);
-	text-decoration: none;
-	
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left: 12px;
-	padding-right: 12px;
-	color: black;
+
+button {
+    font-size: 22px;
+    background-color: rgb(75, 151, 65);
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+}
+
+button:hover {
+    font-size: 22px;
+    background: none repeat 0 0 rgb(255, 255, 255);
+    text-decoration: none;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: black;
+}
+
+/* PAOLINHA */
+
+.main-center-background {
+    background-color: white;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.section-product {
+    background-color: black;
+    width: 25%;
+    margin: 20px;
+    min-width: 260px;
+}
+
+.center-mainbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.img-product {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-product img {
+    width: 80%;
+}
+
+.main-product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+
+.main-product-title h3 {
+    margin: 0 !important;
+    padding-bottom: 10px;
+}
+
+.main-product-price h2 {
+    margin: 0 !important;
+}
+
+.product-main-description {
+    padding: 10px;
+    text-align: justify;
+
+}
+
+.product-main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .section-product {
+        background-color: black;
+        width: 100%;
+        margin: 20px;
+    }
 }
