@@ -10,17 +10,33 @@ h1{
 	color:white !important;
 	font-weight: bold;
 	font-size: 50px !important;
-	background-color:rgb(0, 1, 1);
+	background-color:rgba(51, 153, 51,0.5);
 	padding: 0;
 	margin:0;
 	border: 0;
 }
-
+.titulo{
+	color:white !important;
+	font-weight: 1.4em;
+	font-size: 50px !important;
+	background-color:rgba(20, 130, 40,1);
+	padding: 0;
+	margin:0;
+	border: 0;
+}
+.desc{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-left: 10px;
+		background-color:rgba(20, 130, 40,1);
+	font-weight: bold;
+}
 .descricao{
 	font-size: 16px;
 	margin-top: 10px;
 	margin-left: 10px;
-
+	background-color:rgba(51, 153, 51,0.5);
+	font-weight: bold;
 }
 .map{
 	-webkit-box-shadow:0px 0px 6px 1px #87f91a ;
@@ -34,7 +50,7 @@ h1{
 
 }
 .mapa{
-	margin:0px auto; 
+	margin:0px auto;
 	display:inline-block;
 }
 .descricao-mapa{
@@ -46,7 +62,7 @@ h1{
 	display: grid;
 }
 .evento{
-	 display:inline-block; 
+	 display:inline-block;
 	 width: auto;
 }
 .eventos{
@@ -73,15 +89,75 @@ button{
 	padding-left: 12px;
 	padding-right: 12px;
 	color: white;
-}	
+}
 button:hover{
 	font-size: 22px;
 	background:none repeat 0 0 rgb(255, 255, 255);
 	text-decoration: none;
-	
+
 	padding-top:15px;
 	padding-bottom:15px;
 	padding-left: 12px;
 	padding-right: 12px;
 	color: black;
 }
+.links {
+	background-color: rgba(51, 153, 51,0.9	);
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.links > a {
+	color: white;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: rgb(77, 153, 51);
+	color: white;
+}
+.links > .line {
+	background: white;
+	height: 1px;
+	pointer-events: none;
+}
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
